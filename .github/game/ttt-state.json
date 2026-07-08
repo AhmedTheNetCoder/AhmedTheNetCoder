@@ -1,14 +1,14 @@
 {
   "board": [
+    "O",
+    "X",
+    "O",
     " ",
     "X",
     "O",
-    " ",
     "X",
     "O",
-    "X",
-    "O",
-    " "
+    "X"
   ],
   "stats": {
     "human": 0,
@@ -18,9 +18,9 @@
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 9,
+  "moves": 10,
   "finished": false,
   "highlight": [],
-  "msg": "AI TOOK SECTOR 6 \u2014 YOUR MOVE, EARTHLING",
+  "msg": "AI TOOK SECTOR 1 \u2014 YOUR MOVE, EARTHLING",
   "tone": "cyan"
 }
