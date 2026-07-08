@@ -199,45 +199,51 @@ def main():
     st["recent"] = ([user] + [u for u in st["recent"] if u != user])[:3]
     st["moves"] += 1
 
+    uname = user if len(user) <= 12 else user[:11] + "…"
+    ended = False
     win, line = winner(st["board"])
     if win == "X":
-        st["stats"]["human"] += 1
-        st.update(finished=True, highlight=line, tone="green",
-                  msg=f"IMPOSSIBLE?! HUMANITY WINS — SALUTE @{user.upper()}")
+        st["stats"]["human"] += 1; ended = True
+        st.update(tone="green", msg=f"@{uname.upper()} BEAT THE AI! NEW ROUND — YOU PLAY X")
         reply = (f"🏆 **UNPRECEDENTED.** You beat the Observatory AI, @{user} — that is not supposed to be possible.\n\n"
-                 "Your victory is now recorded on the scoreboard. Click any sector to start a new game.")
+                 "Your victory is recorded on the scoreboard, and a fresh board is already up. "
+                 "Click any sector on the [board](https://github.com/AhmedTheNetCoder) to play again.")
     elif " " not in st["board"]:
-        st["stats"]["draw"] += 1
-        st.update(finished=True, highlight=[], tone="violet",
-                  msg="STALEMATE — THE UNIVERSE REMAINS IN BALANCE")
-        reply = (f"⚖️ A draw, @{user} — the best possible outcome against a perfect machine. "
-                 "Click any sector on the [board](https://github.com/AhmedTheNetCoder) to start a new game.")
+        st["stats"]["draw"] += 1; ended = True
+        st.update(tone="violet", msg="LAST ROUND: STALEMATE — NEW ROUND, YOUR MOVE")
+        reply = (f"⚖️ A draw, @{user} — the best possible outcome against a perfect machine.\n\n"
+                 "A fresh board is already up on the [profile](https://github.com/AhmedTheNetCoder).")
     else:
         _, moves = minimax(st["board"], "O")
         ai = random.choice(moves)
         st["board"][ai] = "O"
         win, line = winner(st["board"])
         if win == "O":
-            st["stats"]["ai"] += 1
-            st.update(finished=True, highlight=line, tone="pink",
-                      msg="THE OBSERVATORY AI WINS — RESISTANCE IS FUTILE")
-            reply = (f"🤖 Checkmate-adjacent, @{user}. The AI takes sector {ai+1} and the round. "
-                     "Click any sector on the [board](https://github.com/AhmedTheNetCoder) for a rematch — humanity needs you.")
+            st["stats"]["ai"] += 1; ended = True
+            st.update(tone="pink", msg="AI WON THE LAST ROUND — AVENGE HUMANITY, PLAY X")
+            reply = (f"🤖 The AI takes sector {ai+1} and the round, @{user}. Final position:\n\n"
+                     f"{emoji_board(st['board'])}\n\n"
+                     "A fresh board is already up on the [profile](https://github.com/AhmedTheNetCoder) — "
+                     "humanity needs its revenge.")
         elif " " not in st["board"]:
-            st["stats"]["draw"] += 1
-            st.update(finished=True, highlight=[], tone="violet",
-                      msg="STALEMATE — THE UNIVERSE REMAINS IN BALANCE")
-            reply = (f"⚖️ A draw, @{user} — the best possible outcome against a perfect machine. "
-                     "Click any sector on the [board](https://github.com/AhmedTheNetCoder) to start a new game.")
+            st["stats"]["draw"] += 1; ended = True
+            st.update(tone="violet", msg="LAST ROUND: STALEMATE — NEW ROUND, YOUR MOVE")
+            reply = (f"⚖️ A draw, @{user} — the best possible outcome against a perfect machine. Final position:\n\n"
+                     f"{emoji_board(st['board'])}\n\n"
+                     "A fresh board is already up on the [profile](https://github.com/AhmedTheNetCoder).")
         else:
             st.update(tone="cyan", msg=f"AI TOOK SECTOR {ai+1} — YOUR MOVE, EARTHLING")
             reply = (f"📡 Move received, @{user}! You took sector {idx+1}; the AI answered with sector {ai+1}.\n\n"
+                     f"**Current board:**\n\n{emoji_board(st['board'])}\n\n"
                      "Head back to the [board](https://github.com/AhmedTheNetCoder) — humanity awaits its next move.")
-    reply += "\n\n**Current board:**\n\n" + emoji_board(st["board"]) + \
-             "\n\n> ⚠️ Your browser's **Back** button shows a cached page — after going back, " \
-             "**refresh the profile** (F5 / pull down) to see the updated board."
+    if "Final position" not in reply and "Current board" not in reply:
+        reply += f"\n\n**Final position:**\n\n{emoji_board(st['board'])}"
+    if ended:
+        st.update(board=[" "]*9, finished=False, highlight=[])
+    reply += ("\n\n> ⚠️ Your browser's **Back** button shows a cached page — after going back, "
+              "**refresh the profile** (F5 / pull down) to see the updated board.")
     save(st); render(st); write_comment(reply)
-    print(f"move ok: human {idx}, finished={st['finished']}")
+    print(f"move ok: human {idx}, ended={ended}")
 
 if __name__ == "__main__":
     main()
