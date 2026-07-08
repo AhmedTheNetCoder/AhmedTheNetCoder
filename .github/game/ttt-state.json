@@ -2,9 +2,9 @@
   "board": [
     " ",
     " ",
-    "X",
     " ",
-    "O",
+    " ",
+    " ",
     " ",
     " ",
     " ",
@@ -18,7 +18,7 @@
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 1,
+  "moves": 2,
   "finished": false,
   "highlight": [],
   "msg": "YOUR MOVE, EARTHLING \u2014 HUMANITY PLAYS X",
