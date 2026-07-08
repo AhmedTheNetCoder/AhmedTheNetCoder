@@ -6,7 +6,7 @@ Modes:
   python ttt.py move            apply move from ISSUE_TITLE / ISSUE_USER env
 Writes a reply for the issue to .github/game/comment.txt (move mode).
 """
-import json, os, random, re, sys
+import json, os, random, re, sys, urllib.parse
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 STATE = os.path.join(ROOT, ".github", "game", "ttt-state.json")
@@ -127,10 +127,14 @@ def update_readme(st):
             i = r * 3 + c
             img = f'<img src="{RAW}/assets/ttt/cell{i}.svg?m={m}" width="110" alt="sector {i+1}"/>'
             if st["board"][i] == " " or st["finished"]:
-                body = ("Just press SUBMIT NEW ISSUE - you do not need to write anything. "
-                        "The Observatory AI will move and close this issue in about 30 seconds. "
-                        "Then refresh the profile to see the new board!")
-                href = f"{ISSUE_NEW}?title=ttt%7Cmove%7C{i}&body=" + body.replace(" ", "+")
+                title = f"🕹️ Sector {i+1} for humanity! · ttt|move|{i}"
+                body = ("You are about to make a move against the Observatory AI. 🤖\n\n"
+                        "Just press **Submit new issue** — no typing needed. "
+                        "The AI will reply, close this issue, and update the board in ~30 seconds. "
+                        "Then head back to the profile and refresh!\n\n"
+                        "(Do not edit the title — it encodes your move.)")
+                href = (f"{ISSUE_NEW}?title={urllib.parse.quote(title, safe='')}"
+                        f"&body={urllib.parse.quote(body, safe='')}")
                 tds.append(f'<td><a href="{href}">{img}</a></td>')
             else:
                 tds.append(f"<td>{img}</td>")
@@ -172,7 +176,7 @@ def main():
 
     title = os.environ.get("ISSUE_TITLE", "")
     user = os.environ.get("ISSUE_USER", "someone")
-    mt = re.match(r"^ttt\|move\|([0-8])$", title.strip())
+    mt = re.search(r"ttt\|move\|([0-8])", title)
     if not mt:
         write_comment("🛰️ Transmission garbled — I couldn't parse that move. "
                       "Please use the board links on the profile page.")
