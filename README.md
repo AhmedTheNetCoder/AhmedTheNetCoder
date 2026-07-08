@@ -96,7 +96,7 @@ a different kind of light.
 <!--SCORE:START-->
 <p align="center">
   <a href="https://ahmedthenetcoder.github.io/AhmedTheNetCoder/">
-    <img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/scoreboard.svg?v=1" width="100%" alt="global scoreboard — live"/>
+    <img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/scoreboard.svg?v=2" width="100%" alt="global scoreboard — live"/>
   </a>
 </p>
 <!--SCORE:END-->

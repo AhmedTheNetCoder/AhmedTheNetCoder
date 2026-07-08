@@ -1,12 +1,16 @@
 {
   "win": 0,
-  "draw": 0,
+  "draw": 1,
   "loss": 1,
   "recent": [
+    {
+      "u": "AhmedTheNetCoder",
+      "r": "draw"
+    },
     {
       "u": "AhmedTheNetCoder",
       "r": "loss"
     }
   ],
-  "n": 1
+  "n": 2
 }
