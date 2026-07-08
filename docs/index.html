@@ -83,6 +83,12 @@
   button.ctrl:hover{background:rgba(34,211,238,.12); box-shadow:0 0 18px rgba(34,211,238,.25)}
   button.ctrl.alt{color:var(--dim); border-color:var(--line)}
   button.ctrl.alt:hover{color:var(--pink); border-color:var(--pink); background:rgba(244,114,182,.08); box-shadow:none}
+  a.ctrl.tx{
+    color:var(--green); border-color:var(--green); text-decoration:none; display:inline-block;
+    animation:txpulse 1.8s ease-in-out infinite;
+  }
+  a.ctrl.tx:hover{background:rgba(74,222,128,.12); box-shadow:0 0 18px rgba(74,222,128,.3)}
+  @keyframes txpulse{0%,100%{box-shadow:0 0 0 rgba(74,222,128,0)}50%{box-shadow:0 0 16px rgba(74,222,128,.35)}}
   .foot{margin-top:34px; font-size:13px; color:var(--dim)}
   .foot a{color:var(--violet); text-decoration:none}
   .foot a:hover{color:var(--cyan)}
@@ -107,6 +113,11 @@
     <div class="ai">AI<b id="sAi">0</b></div>
     <div class="dr">DRAWS<b id="sDr">0</b></div>
   </div>
+
+  <div class="btns" id="txrow" style="display:none">
+    <a class="ctrl tx" id="tx" target="_blank" rel="noopener">📡 TRANSMIT RESULT — GET ON THE SCOREBOARD</a>
+  </div>
+  <div class="tag" id="txnote" style="display:none">one click puts your username + result on the profile's global scoreboard</div>
 
   <div class="btns">
     <button class="ctrl" id="again">NEW ROUND</button>
@@ -155,12 +166,27 @@ function newRound(){
   if(humanStarts){humanTurn=true;setStatus("YOUR MOVE, EARTHLING — YOU PLAY ✕");}
   else{humanTurn=false;setStatus("AI OPENS THIS ROUND…");setTimeout(aiMove,650);}
 }
+function txUrl(res){
+  const titles={
+    win:"📡 score|win · I BEAT the Observatory AI?!",
+    draw:"📡 score|draw · I forced a stalemate",
+    loss:"📡 score|loss · The AI got me"};
+  const body="Just press **Submit new issue** — nothing to type. Your username and result will "+
+    "appear on the global scoreboard on my profile within ~30 seconds.";
+  return "https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title="+
+    encodeURIComponent(titles[res])+"&body="+encodeURIComponent(body);
+}
+function offerTx(res){
+  const row=document.getElementById("txrow"),note=document.getElementById("txnote");
+  document.getElementById("tx").href=txUrl(res);
+  row.style.display="flex"; note.style.display="block";
+}
 function endRound(res,line){
   playing=false; cells.forEach(c=>c.disabled=true);
   if(line)line.forEach(i=>cells[i].classList.add("winline"));
-  if(res==="X"){score.you++;setStatus("IMPOSSIBLE?! YOU WIN — THE AI DEMANDS A REMATCH","win");burst("#4ade80");}
-  else if(res==="O"){score.ai++;setStatus("THE AI WINS — RESISTANCE IS FUTILE","lose");}
-  else{score.dr++;setStatus("STALEMATE — THE UNIVERSE REMAINS IN BALANCE","draw");}
+  if(res==="X"){score.you++;setStatus("IMPOSSIBLE?! YOU WIN — THE AI DEMANDS A REMATCH","win");burst("#4ade80");offerTx("win");}
+  else if(res==="O"){score.ai++;setStatus("THE AI WINS — RESISTANCE IS FUTILE","lose");offerTx("loss");}
+  else{score.dr++;setStatus("STALEMATE — THE UNIVERSE REMAINS IN BALANCE","draw");offerTx("draw");}
   updScore(); setTimeout(newRound,2200);
 }
 function place(i,p){board[i]=p;cells[i].innerHTML=p==="X"?XSVG:OSVG;cells[i].disabled=true;}

@@ -93,6 +93,15 @@ a different kind of light.
   </a>
 </p>
 
+<!--SCORE:START-->
+<p align="center">
+  <a href="https://ahmedthenetcoder.github.io/AhmedTheNetCoder/">
+    <img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/scoreboard.svg?v=0" width="100%" alt="global scoreboard — live"/>
+  </a>
+</p>
+<!--SCORE:END-->
+
+
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 
 <!-- ░░░░░░░░░░ INSTRUMENTATION (skills) ░░░░░░░░░░ -->
