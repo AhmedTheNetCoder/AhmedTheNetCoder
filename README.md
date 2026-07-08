@@ -27,7 +27,6 @@
 <p align="center">
   <a href="#-first-contact"><img src="https://img.shields.io/badge/🛰️_First_Contact-0d1117?style=for-the-badge" alt="intro"/></a>
   <a href="#-instrumentation--optics"><img src="https://img.shields.io/badge/🔭_Instrumentation-0d1117?style=for-the-badge" alt="skills"/></a>
-  <a href="#-discovered-worlds"><img src="https://img.shields.io/badge/🪐_Discovered_Worlds-0d1117?style=for-the-badge" alt="projects"/></a>
   <a href="#-signal-processing-lab"><img src="https://img.shields.io/badge/📡_Signal_Lab-0d1117?style=for-the-badge" alt="data"/></a>
   <a href="#-long-exposure-gallery"><img src="https://img.shields.io/badge/📷_Long_Exposure-0d1117?style=for-the-badge" alt="photography"/></a>
   <a href="#-observatory-telemetry"><img src="https://img.shields.io/badge/📊_Telemetry-0d1117?style=for-the-badge" alt="stats"/></a>
@@ -126,50 +125,6 @@ a different kind of light.
 ![Photography](https://img.shields.io/badge/Astrophotography-8b5cf6?style=for-the-badge&logo=nasa&logoColor=white)
 
 </div>
-
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
-
-<!-- ░░░░░░░░░░ DISCOVERED WORLDS (projects) ░░░░░░░░░░ -->
-## 🪐 Discovered Worlds
-
-> Catalogued objects from the observatory. Each is a real, orbiting project.
-
-<div align="center">
-
-<a href="https://github.com/AhmedTheNetCoder/Personal-Portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AhmedTheNetCoder&repo=Personal-Portfolio&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9" alt="Personal Portfolio"/>
-</a>
-<a href="https://github.com/AhmedTheNetCoder/Personal-Expense-Tracker">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AhmedTheNetCoder&repo=Personal-Expense-Tracker&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9" alt="Expense Tracker"/>
-</a>
-
-<a href="https://github.com/AhmedTheNetCoder/SudokuWizard">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AhmedTheNetCoder&repo=SudokuWizard&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9" alt="SudokuWizard"/>
-</a>
-<a href="https://github.com/AhmedTheNetCoder/Sindbad-Cars-Showroom">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AhmedTheNetCoder&repo=Sindbad-Cars-Showroom&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9" alt="Sindbad Cars Showroom"/>
-</a>
-
-</div>
-
-<details>
-<summary><b>🗂️ Full object catalogue (click to expand the star chart)</b></summary>
-
-<br/>
-
-| Object | Class | Instruments | Signal |
-|--------|-------|-------------|--------|
-| **Personal-Portfolio** | Web | HTML · CSS · JS | Personal launch pad |
-| **Personal-Expense-Tracker** | Desktop | PySide6 · SQLite | Finance telemetry |
-| **Slither** | Game | Python · Pygame | Reflex arcade |
-| **SudokuWizard** | Solver | Python | Constraint engine |
-| **Sindbad-Cars-Showroom** | Web | ASP.NET | E-commerce platform |
-| **Twitter-Scraper** | Data | Python | Signal harvesting |
-
-> 🚧 *Nebula forming:* a public **Power BI dashboard gallery** repo is currently
-> condensing — expect it in the next observation window.
-
-</details>
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 

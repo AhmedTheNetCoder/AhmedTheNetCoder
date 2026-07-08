@@ -101,14 +101,13 @@
   </g>
 
   <!-- title block -->
-  <g transform="translate(330,110)">
-    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="2" fill="url(#title)">COSMIC DATA OBSERVATORY</text>
-    <text x="2" y="34" font-family="'Consolas','Courier New',monospace" font-size="17" fill="#94a3b8">
-      <tspan fill="#22d3ee">&gt;</tspan> pointing analytical instruments at raw data<tspan fill="#a78bfa">_</tspan>
-      <animate attributeName="opacity" values="1;1" dur="1s"/>
-    </text>
+  <g transform="translate(330,86)">
+    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="2" fill="url(#title)">AHMED AL-KHALDI</text>
+    <text x="2" y="30" font-family="'Consolas','Courier New',monospace" font-size="15" font-weight="700" letter-spacing="3" fill="#22d3ee">// COSMIC DATA OBSERVATORY</text>
+    <text x="2" y="56" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="0.5" fill="#94a3b8">Data Analyst
+      <tspan fill="#475569"> · </tspan>Power BI Developer<tspan fill="#475569"> · </tspan>Astrophotographer<tspan fill="#a78bfa">_</tspan></text>
     <!-- animated signal waveform -->
-    <g transform="translate(2,58)" stroke="#4ade80" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <g transform="translate(2,76)" stroke="#4ade80" stroke-width="2.4" fill="none" stroke-linecap="round">
       <polyline points="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10">
         <animate attributeName="points"
           values="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10;
