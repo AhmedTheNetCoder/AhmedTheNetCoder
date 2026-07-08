@@ -5,8 +5,8 @@
     "O",
     " ",
     "X",
-    " ",
-    " ",
+    "O",
+    "X",
     "O",
     " "
   ],
@@ -18,9 +18,9 @@
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 8,
+  "moves": 9,
   "finished": false,
   "highlight": [],
-  "msg": "AI TOOK SECTOR 8 \u2014 YOUR MOVE, EARTHLING",
+  "msg": "AI TOOK SECTOR 6 \u2014 YOUR MOVE, EARTHLING",
   "tone": "cyan"
 }
