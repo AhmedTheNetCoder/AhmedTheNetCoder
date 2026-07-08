@@ -232,6 +232,20 @@ one glance to the answer.
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 
+<!-- ░░░░░░░░░░ DEEP-FIELD SURVEY (metrics) ░░░░░░░░░░ -->
+## 🛰️ Deep-Field Survey
+
+> A full instrument sweep — isometric contribution calendar, language mix, and
+> commit habits, regenerated daily by <code>.github/workflows/metrics.yml</code>.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/metrics.svg" alt="metrics dashboard" width="100%"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt="divider"/>
+
 <!-- ░░░░░░░░░░ ACTIVE MISSIONS (goals) ░░░░░░░░░░ -->
 ## 🚀 Active Missions
 
