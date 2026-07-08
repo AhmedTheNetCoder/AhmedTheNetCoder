@@ -84,9 +84,10 @@ a different kind of light.
 ## 🕹️ Challenge the Observatory AI
 
 > **This board is real and you can play it, right now.** Click any empty sector — a pre-filled
-> issue opens — press **Submit new issue** (no typing needed). The Observatory AI makes its
-> move and updates this board in ~30 seconds. Refresh to see it. One shared board for all of
-> humanity, powered by GitHub Actions. *The AI plays perfect minimax — it has never lost.*
+> issue opens — press **Submit new issue** (no typing needed). The Observatory AI replies on
+> your issue with the new board in ~30 seconds, then come back here and **refresh the page**
+> (the Back button alone shows a cached copy). One shared board for all of humanity, powered
+> by GitHub Actions. *The AI plays perfect minimax — it has never lost.*
 
 <!--TTT:START-->
 <div align="center">

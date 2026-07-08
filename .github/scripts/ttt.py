@@ -156,6 +156,10 @@ def update_readme(st):
     with open(README, "w", encoding="utf-8", newline="\n") as f:
         f.write(txt)
 
+def emoji_board(b):
+    sym = {"X": "❌", "O": "🟣", " ": "⬛"}
+    return "\n".join("".join(sym[c] for c in b[r*3:r*3+3]) for r in range(3))
+
 def write_comment(text):
     os.makedirs(os.path.dirname(COMMENT), exist_ok=True)
     with open(COMMENT, "w", encoding="utf-8") as f:
@@ -226,9 +230,12 @@ def main():
             reply = (f"⚖️ A draw, @{user} — the best possible outcome against a perfect machine. "
                      "Click any sector on the [board](https://github.com/AhmedTheNetCoder) to start a new game.")
         else:
-            st.update(tone="cyan", msg="YOUR MOVE, EARTHLING — HUMANITY PLAYS X")
+            st.update(tone="cyan", msg=f"AI TOOK SECTOR {ai+1} — YOUR MOVE, EARTHLING")
             reply = (f"📡 Move received, @{user}! You took sector {idx+1}; the AI answered with sector {ai+1}.\n\n"
                      "Head back to the [board](https://github.com/AhmedTheNetCoder) — humanity awaits its next move.")
+    reply += "\n\n**Current board:**\n\n" + emoji_board(st["board"]) + \
+             "\n\n> ⚠️ Your browser's **Back** button shows a cached page — after going back, " \
+             "**refresh the profile** (F5 / pull down) to see the updated board."
     save(st); render(st); write_comment(reply)
     print(f"move ok: human {idx}, finished={st['finished']}")
 
