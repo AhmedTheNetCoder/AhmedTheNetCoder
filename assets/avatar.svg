@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none" role="img" aria-label="Observer avatar — silhouette with telescope under a cosmic sky">
+  <defs>
+    <radialGradient id="sky" cx="32%" cy="22%" r="110%">
+      <stop offset="0%"  stop-color="#1b2450"/>
+      <stop offset="45%" stop-color="#101637"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </radialGradient>
+    <radialGradient id="nebV" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#8b5cf6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#8b5cf6" stop-opacity="0.34"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </linearGradient>
+    <linearGradient id="silh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#131c33"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft20" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <clipPath id="disc"><circle cx="400" cy="400" r="376"/></clipPath>
+  </defs>
+
+  <!-- backdrop outside disc (transparent-safe corners) -->
+  <g clip-path="url(#disc)">
+    <rect width="800" height="800" fill="url(#sky)"/>
+
+    <!-- milky way band -->
+    <g transform="rotate(-24 400 340)" filter="url(#soft20)">
+      <ellipse cx="420" cy="330" rx="520" ry="80" fill="#e0e7ff" opacity="0.14"/>
+    </g>
+
+    <!-- nebulae -->
+    <ellipse cx="200" cy="190" rx="260" ry="170" fill="url(#nebV)"/>
+    <ellipse cx="640" cy="560" rx="240" ry="180" fill="url(#nebC)"/>
+
+    <!-- stars -->
+    <g fill="#cbd5e1" opacity="0.6">
+      <circle cx="120" cy="120" r="2"/><circle cx="210" cy="70" r="1.6"/><circle cx="320" cy="140" r="1.8"/>
+      <circle cx="430" cy="80" r="1.6"/><circle cx="540" cy="150" r="2"/><circle cx="640" cy="90" r="1.6"/>
+      <circle cx="700" cy="200" r="1.8"/><circle cx="150" cy="260" r="1.6"/><circle cx="90" cy="380" r="1.8"/>
+      <circle cx="260" cy="220" r="1.4"/><circle cx="480" cy="210" r="1.5"/><circle cx="720" cy="330" r="1.6"/>
+      <circle cx="70" cy="520" r="1.6"/><circle cx="140" cy="620" r="1.5"/><circle cx="680" cy="660" r="1.6"/>
+    </g>
+    <g fill="#ffffff" filter="url(#glow)">
+      <circle cx="180" cy="170" r="2.6"/><circle cx="370" cy="110" r="2.4"/><circle cx="590" cy="120" r="2.8"/>
+      <circle cx="100" cy="450" r="2.4"/><circle cx="710" cy="430" r="2.4"/><circle cx="240" cy="330" r="2.2"/>
+    </g>
+
+    <!-- constellation "the uptrend" (mini, echoes the hero) -->
+    <g transform="translate(508,258)" stroke="#22d3ee" stroke-width="3" stroke-linejoin="round">
+      <path d="M0,0 L52,-34 L104,-14 L156,-62" fill="none" opacity="0.85"/>
+      <g fill="#ffffff" stroke="none" filter="url(#glow)">
+        <circle cx="0" cy="0" r="5"/><circle cx="52" cy="-34" r="5"/><circle cx="104" cy="-14" r="5"/>
+        <circle cx="156" cy="-62" r="7" fill="#4ade80"/>
+      </g>
+    </g>
+
+    <!-- glow behind figure -->
+    <ellipse cx="400" cy="560" rx="330" ry="280" fill="url(#haloG)"/>
+
+    <!-- telescope beam (from tube mouth toward constellation) -->
+    <path d="M514,428 L556,240 L660,302 Z" fill="url(#beam)"/>
+
+    <!-- figure: default-avatar silhouette (head + shoulders) -->
+    <g>
+      <path d="M148,800 C148,650 260,566 400,566 C540,566 652,650 652,800 Z" fill="url(#silh)" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="5"/>
+      <circle cx="400" cy="432" r="118" fill="url(#silh)" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="5"/>
+    </g>
+
+    <!-- telescope: tube angled to upper right, in front of figure -->
+    <g>
+      <!-- tripod leg hint -->
+      <line x1="420" y1="520" x2="368" y2="680" stroke="#1e293b" stroke-width="12" stroke-linecap="round"/>
+      <line x1="428" y1="522" x2="470" y2="682" stroke="#16203a" stroke-width="12" stroke-linecap="round"/>
+      <!-- tube -->
+      <g transform="rotate(-40 430 500)">
+        <rect x="330" y="470" width="240" height="58" rx="26" fill="url(#tube)" stroke="#22d3ee" stroke-opacity="0.75" stroke-width="5"/>
+        <rect x="548" y="466" width="30" height="66" rx="10" fill="#0b1020" stroke="#22d3ee" stroke-opacity="0.75" stroke-width="5"/>
+        <rect x="318" y="482" width="26" height="34" rx="8" fill="#0b1020" stroke="#a78bfa" stroke-opacity="0.8" stroke-width="5"/>
+        <line x1="392" y1="480" x2="392" y2="518" stroke="#8b5cf6" stroke-opacity="0.65" stroke-width="6"/>
+      </g>
+      <!-- lens glint at the mouth -->
+      <circle cx="531" cy="412" r="8" fill="#a5f3fc" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- gradient ring frame -->
+  <circle cx="400" cy="400" r="376" stroke="url(#ring)" stroke-width="16" fill="none"/>
+  <circle cx="400" cy="400" r="358" stroke="#0d1117" stroke-width="6" fill="none" opacity="0.9"/>
+</svg>
