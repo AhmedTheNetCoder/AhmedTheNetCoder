@@ -26,6 +26,7 @@
 <!-- ░░░░░░░░░░ OBSERVATORY CONTROL PANEL (nav) ░░░░░░░░░░ -->
 <p align="center">
   <a href="#-first-contact"><img src="https://img.shields.io/badge/🛰️_First_Contact-0d1117?style=for-the-badge" alt="intro"/></a>
+  <a href="#-challenge-the-observatory-ai"><img src="https://img.shields.io/badge/🕹️_Play_vs_AI-0d1117?style=for-the-badge" alt="game"/></a>
   <a href="#-instrumentation--optics"><img src="https://img.shields.io/badge/🔭_Instrumentation-0d1117?style=for-the-badge" alt="skills"/></a>
   <a href="#-signal-processing-lab"><img src="https://img.shields.io/badge/📡_Signal_Lab-0d1117?style=for-the-badge" alt="data"/></a>
   <a href="#-featured-observations"><img src="https://img.shields.io/badge/🪐_Featured_Work-0d1117?style=for-the-badge" alt="projects"/></a>
@@ -76,6 +77,30 @@ a different kind of light.
 </td>
 </tr>
 </table>
+
+<img src="./assets/divider.svg" width="100%" alt="divider"/>
+
+<!-- ░░░░░░░░░░ TIC-TAC-TOE vs AI (interactive!) ░░░░░░░░░░ -->
+## 🕹️ Challenge the Observatory AI
+
+> **This board is real and you can play it, right now.** Click any empty sector — a pre-filled
+> issue opens — press **Submit new issue** (no typing needed). The Observatory AI makes its
+> move and updates this board in ~30 seconds. Refresh to see it. One shared board for all of
+> humanity, powered by GitHub Actions. *The AI plays perfect minimax — it has never lost.*
+
+<!--TTT:START-->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/status.svg?m=0" width="100%" alt="game status"/>
+
+<table>
+<tr><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C0&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell0.svg?m=0" width="110" alt="sector 1"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C1&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell1.svg?m=0" width="110" alt="sector 2"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C2&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell2.svg?m=0" width="110" alt="sector 3"/></a></td></tr>
+<tr><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C3&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell3.svg?m=0" width="110" alt="sector 4"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C4&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell4.svg?m=0" width="110" alt="sector 5"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C5&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell5.svg?m=0" width="110" alt="sector 6"/></a></td></tr>
+<tr><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C6&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell6.svg?m=0" width="110" alt="sector 7"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C7&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell7.svg?m=0" width="110" alt="sector 8"/></a></td><td><a href="https://github.com/AhmedTheNetCoder/AhmedTheNetCoder/issues/new?title=ttt%7Cmove%7C8&body=Just+press+SUBMIT+NEW+ISSUE+-+you+do+not+need+to+write+anything.+The+Observatory+AI+will+move+and+close+this+issue+in+about+30+seconds.+Then+refresh+the+profile+to+see+the+new+board!"><img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/ttt/cell8.svg?m=0" width="110" alt="sector 9"/></a></td></tr>
+</table>
+
+</div>
+<!--TTT:END-->
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 

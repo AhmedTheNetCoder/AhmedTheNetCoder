@@ -1,0 +1,24 @@
+{
+  "board": [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+  ],
+  "stats": {
+    "human": 0,
+    "ai": 0,
+    "draw": 0
+  },
+  "recent": [],
+  "moves": 0,
+  "finished": false,
+  "highlight": [],
+  "msg": "YOUR MOVE, EARTHLING \u2014 HUMANITY PLAYS X",
+  "tone": "cyan"
+}
