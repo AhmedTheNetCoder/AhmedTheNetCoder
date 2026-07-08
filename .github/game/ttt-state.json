@@ -1,12 +1,12 @@
 {
   "board": [
-    "O",
-    "X",
-    "X",
-    "O",
-    "X",
     " ",
-    "O",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
     " ",
     " "
   ],
@@ -18,13 +18,9 @@
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 5,
-  "finished": true,
-  "highlight": [
-    0,
-    3,
-    6
-  ],
-  "msg": "THE OBSERVATORY AI WINS \u2014 RESISTANCE IS FUTILE",
-  "tone": "pink"
+  "moves": 6,
+  "finished": false,
+  "highlight": [],
+  "msg": "YOUR MOVE, EARTHLING \u2014 HUMANITY PLAYS X",
+  "tone": "cyan"
 }
