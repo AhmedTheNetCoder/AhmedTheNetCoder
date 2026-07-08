@@ -1,8 +1,8 @@
 {
   "board": [
     " ",
-    " ",
-    " ",
+    "X",
+    "O",
     " ",
     " ",
     " ",
@@ -18,9 +18,9 @@
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 6,
+  "moves": 7,
   "finished": false,
   "highlight": [],
-  "msg": "YOUR MOVE, EARTHLING \u2014 HUMANITY PLAYS X",
+  "msg": "AI TOOK SECTOR 3 \u2014 YOUR MOVE, EARTHLING",
   "tone": "cyan"
 }
