@@ -1,121 +1,282 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" fill="none" role="img" aria-label="Cosmic Data Observatory — animated banner" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" fill="none" role="img" aria-label="Ahmed Al-Khaldi — Cosmic Data Observatory animated banner" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <radialGradient id="sky" cx="26%" cy="28%" r="95%">
-      <stop offset="0%" stop-color="#182247"/>
-      <stop offset="45%" stop-color="#0e1430"/>
+    <radialGradient id="sky" cx="30%" cy="20%" r="110%">
+      <stop offset="0%"  stop-color="#1b2450"/>
+      <stop offset="40%" stop-color="#101637"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </radialGradient>
-    <radialGradient id="neb" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#6d28d9" stop-opacity="0.18"/>
+    <radialGradient id="vig" cx="50%" cy="45%" r="75%">
+      <stop offset="0%"  stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.55"/>
+    </radialGradient>
+    <radialGradient id="nebV" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#8b5cf6" stop-opacity="0.50"/>
+      <stop offset="55%" stop-color="#6d28d9" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="neb2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45"/>
+    <radialGradient id="nebC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#22d3ee" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="core" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="30%" stop-color="#a78bfa"/>
-      <stop offset="70%" stop-color="#6d28d9"/>
-      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    <radialGradient id="nebP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#f472b6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.85"/>
+    <linearGradient id="mw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#c7d2fe" stop-opacity="0"/>
+      <stop offset="35%"  stop-color="#e0e7ff" stop-opacity="0.20"/>
+      <stop offset="60%"  stop-color="#f5f3ff" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#c7d2fe" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="55%" stop-color="#a78bfa"/>
+      <stop offset="0%"  stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#f472b6"/>
     </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1.6 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0.34"/>
+      <stop offset="70%"  stop-color="#22d3ee" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <radialGradient id="planetBody" cx="35%" cy="30%" r="80%">
+      <stop offset="0%"  stop-color="#fbcfe8"/>
+      <stop offset="45%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </radialGradient>
+    <filter id="soft18" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="typeClip">
+      <rect x="0" y="-26" width="0" height="36">
+        <animate attributeName="width" from="0" to="470" dur="2.2s" begin="1.1s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <path id="chartPath" d="M0,-20 L70,-62 L140,-38 L210,-98 L280,-72 L350,-134 L420,-108 L490,-172"/>
   </defs>
 
-  <!-- backdrop -->
-  <rect width="1200" height="260" fill="url(#sky)"/>
+  <!-- ── SKY ─────────────────────────────────────────────── -->
+  <rect width="1600" height="520" fill="url(#sky)"/>
 
-  <!-- drifting nebulae -->
-  <ellipse cx="230" cy="120" rx="260" ry="150" fill="url(#neb)">
-    <animateTransform attributeName="transform" type="translate" values="0 0; 30 -12; 0 0" dur="18s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="9s" repeatCount="indefinite"/>
-  </ellipse>
-  <ellipse cx="980" cy="180" rx="230" ry="130" fill="url(#neb2)">
-    <animateTransform attributeName="transform" type="translate" values="0 0; -26 10; 0 0" dur="22s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.6;0.95;0.6" dur="11s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <!-- twinkling starfield -->
-  <g fill="#ffffff">
-    <circle cx="80"  cy="40"  r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
-    <circle cx="160" cy="90"  r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="300" cy="60"  r="1.4"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.7s" begin="1.1s" repeatCount="indefinite"/></circle>
-    <circle cx="420" cy="30"  r="1.0"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="0.7s" repeatCount="indefinite"/></circle>
-    <circle cx="520" cy="110" r="1.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" begin="0.2s" repeatCount="indefinite"/></circle>
-    <circle cx="640" cy="50"  r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.3s" begin="1.6s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="90"  r="1.5"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></circle>
-    <circle cx="880" cy="45"  r="1.1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.9s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="1000" cy="80" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.0s" begin="1.3s" repeatCount="indefinite"/></circle>
-    <circle cx="1100" cy="50" r="1.2"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></circle>
-    <circle cx="120" cy="200" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" begin="1.0s" repeatCount="indefinite"/></circle>
-    <circle cx="360" cy="220" r="1.1"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" begin="0.6s" repeatCount="indefinite"/></circle>
-    <circle cx="600" cy="210" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.0s" begin="1.4s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="215" r="1.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle>
-    <circle cx="1060" cy="205" r="1.4"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.5s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <!-- milky way band -->
+  <g transform="rotate(-16 800 230)" filter="url(#soft18)">
+    <ellipse cx="820" cy="225" rx="920" ry="95" fill="url(#mw)">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="14s" repeatCount="indefinite"/>
+    </ellipse>
   </g>
 
-  <!-- shooting star (periodic) -->
-  <g>
-    <line x1="0" y1="0" x2="34" y2="10" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.9;0" keyTimes="0;0.7;0.82;1" dur="7s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="900 -20; 900 -20; 1180 120; 1180 120" keyTimes="0;0.7;0.95;1" dur="7s" repeatCount="indefinite"/>
+  <!-- drifting nebulae -->
+  <ellipse cx="300" cy="140" rx="330" ry="180" fill="url(#nebV)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 36 -14; 0 0" dur="26s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1260" cy="330" rx="300" ry="160" fill="url(#nebC)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -30 12; 0 0" dur="30s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="900" cy="90" rx="240" ry="120" fill="url(#nebP)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 18 10; 0 0" dur="34s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ── PARALLAX STARFIELD ──────────────────────────────── -->
+  <!-- far layer -->
+  <g fill="#cbd5e1" opacity="0.55">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -22 0; 0 0" dur="120s" repeatCount="indefinite"/>
+    <circle cx="60" cy="60" r="0.9"/><circle cx="150" cy="140" r="0.8"/><circle cx="240" cy="40" r="1"/>
+    <circle cx="330" cy="200" r="0.8"/><circle cx="410" cy="90" r="0.9"/><circle cx="500" cy="30" r="0.8"/>
+    <circle cx="590" cy="170" r="1"/><circle cx="680" cy="70" r="0.8"/><circle cx="760" cy="220" r="0.9"/>
+    <circle cx="850" cy="120" r="0.8"/><circle cx="930" cy="40" r="1"/><circle cx="1020" cy="190" r="0.8"/>
+    <circle cx="1110" cy="80" r="0.9"/><circle cx="1200" cy="150" r="0.8"/><circle cx="1290" cy="50" r="1"/>
+    <circle cx="1380" cy="210" r="0.8"/><circle cx="1470" cy="100" r="0.9"/><circle cx="1550" cy="40" r="0.8"/>
+    <circle cx="110" cy="300" r="0.9"/><circle cx="420" cy="330" r="0.8"/><circle cx="720" cy="310" r="0.9"/>
+    <circle cx="1050" cy="290" r="0.8"/><circle cx="1340" cy="320" r="0.9"/><circle cx="1520" cy="280" r="0.8"/>
+  </g>
+  <!-- mid layer (twinkling) -->
+  <g fill="#e2e8f0">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -40 0; 0 0" dur="90s" repeatCount="indefinite"/>
+    <circle cx="90"  cy="110" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="270" cy="70"  r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="460" cy="150" r="1.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.8s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="40"  r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="180" r="1.4"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="60" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1180" cy="130" r="1.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1360" cy="70" r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.0s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="1500" cy="170" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="260" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="290" r="1.4"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="270" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.7s" begin="1.0s" repeatCount="indefinite"/></circle>
+    <circle cx="1240" cy="250" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" begin="0.7s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- near layer (bright, glowing) -->
+  <g fill="#ffffff" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -60 0; 0 0" dur="70s" repeatCount="indefinite"/>
+    <circle cx="180" cy="50"  r="1.9"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="90"  r="1.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.1s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="140" r="2.0"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1090" cy="100" r="1.8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="140" r="1.9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.4s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="240" r="1.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" begin="1.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ── SHOOTING STARS ─────────────────────────────────── -->
+  <g stroke-linecap="round">
+    <line x1="0" y1="0" x2="42" y2="12" stroke="#e0f2fe" stroke-width="2.4" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.95;0" keyTimes="0;0.72;0.82;1" dur="9s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="1050 -20; 1050 -20; 1420 120; 1420 120" keyTimes="0;0.72;0.95;1" dur="9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="0" x2="36" y2="6" stroke="#fbcfe8" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.85;0" keyTimes="0;0.55;0.66;1" dur="13s" begin="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="300 -15; 300 -15; 640 130; 640 130" keyTimes="0;0.55;0.85;1" dur="13s" begin="4s" repeatCount="indefinite"/>
     </line>
   </g>
 
-  <!-- observatory: radar sweep + orbit around a data core -->
-  <g transform="translate(180,130)">
-    <!-- faint range rings -->
-    <circle r="86" fill="none" stroke="#22d3ee" stroke-opacity="0.14" stroke-width="1"/>
-    <circle r="58" fill="none" stroke="#22d3ee" stroke-opacity="0.18" stroke-width="1"/>
-    <circle r="30" fill="none" stroke="#22d3ee" stroke-opacity="0.22" stroke-width="1"/>
-    <!-- rotating radar sweep -->
-    <g>
-      <path d="M0 0 L86 0 A86 86 0 0 1 60 62 Z" fill="url(#sweep)" opacity="0.5"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
-    </g>
-    <!-- glowing data core -->
-    <circle r="26" fill="url(#core)">
-      <animate attributeName="r" values="22;28;22" dur="3.4s" repeatCount="indefinite"/>
+  <!-- ── SATELLITE (slow flyby, blinking) ───────────────── -->
+  <g opacity="0.9">
+    <animateMotion path="M -60,150 L 1660,90" dur="38s" repeatCount="indefinite"/>
+    <rect x="-7" y="-2" width="14" height="4" rx="1" fill="#94a3b8"/>
+    <rect x="-16" y="-1.4" width="7" height="2.8" fill="#38bdf8" opacity="0.85"/>
+    <rect x="9"   y="-1.4" width="7" height="2.8" fill="#38bdf8" opacity="0.85"/>
+    <circle cx="0" cy="-4" r="1.6" fill="#f87171">
+      <animate attributeName="opacity" values="1;0.1;1" dur="1.6s" repeatCount="indefinite"/>
     </circle>
-    <circle r="6" fill="#ffffff"/>
-    <!-- orbiting planet -->
+  </g>
+
+  <!-- ── RINGED PLANET (top right) ──────────────────────── -->
+  <g transform="translate(1430,105)">
+    <ellipse rx="66" ry="18" transform="rotate(-18)" fill="none" stroke="#a78bfa" stroke-opacity="0.28" stroke-width="7"/>
+    <circle r="34" fill="url(#planetBody)"/>
+    <ellipse rx="66" ry="18" transform="rotate(-18)" fill="none" stroke="#e9d5ff" stroke-opacity="0.55" stroke-width="2.2" stroke-dasharray="3 5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
-      <circle cx="86" cy="0" r="6" fill="#f472b6"/>
-      <circle cx="86" cy="0" r="12" fill="#f472b6" opacity="0.25"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+      <circle cx="82" cy="0" r="4.5" fill="#f472b6" filter="url(#glow)"/>
     </g>
-    <!-- second orbiter, opposite direction -->
+    <animateTransform attributeName="transform" type="translate" values="1430 105; 1430 96; 1430 105" dur="12s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ── CONSTELLATION-AS-CHART (right sky) ─────────────── -->
+  <g transform="translate(990,330)">
+    <!-- faint axes -->
+    <line x1="-14" y1="0" x2="510" y2="0" stroke="#334155" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line x1="0" y1="12" x2="0" y2="-190" stroke="#334155" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <text x="514" y="4" font-family="'Consolas','Courier New',monospace" font-size="11" fill="#475569">t</text>
+    <text x="-4" y="-196" font-family="'Consolas','Courier New',monospace" font-size="11" fill="#475569">flux</text>
+    <!-- constellation line = rising line chart, draws itself -->
+    <use href="#chartPath" stroke="url(#chartLine)" stroke-width="2" fill="none" stroke-linejoin="round"
+         stroke-dasharray="760" stroke-dashoffset="760" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" from="760" to="0" dur="4s" begin="1.4s" fill="freeze"/>
+    </use>
+    <!-- data-point stars -->
+    <g fill="#ffffff" filter="url(#glow)">
+      <circle cx="0"   cy="-20"  r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="3.0s" repeatCount="indefinite"/></circle>
+      <circle cx="70"  cy="-62"  r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="3.4s" begin="0.3s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="-38"  r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="2.8s" begin="0.7s" repeatCount="indefinite"/></circle>
+      <circle cx="210" cy="-98"  r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="3.2s" begin="1.0s" repeatCount="indefinite"/></circle>
+      <circle cx="280" cy="-72"  r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="2.9s" begin="0.4s" repeatCount="indefinite"/></circle>
+      <circle cx="350" cy="-134" r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="3.5s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="-108" r="3"><animate attributeName="r" values="2.4;3.6;2.4" dur="2.7s" begin="1.3s" repeatCount="indefinite"/></circle>
+      <circle cx="490" cy="-172" r="4" fill="#4ade80"><animate attributeName="r" values="3.2;4.8;3.2" dur="2.4s" begin="0.6s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- pulse travelling along the constellation -->
+    <circle r="3.4" fill="#22d3ee" filter="url(#glowBig)" opacity="0">
+      <animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.05;0.9;1" dur="5s" begin="6s" repeatCount="indefinite"/>
+      <animateMotion dur="5s" begin="6s" repeatCount="indefinite"><mpath href="#chartPath"/></animateMotion>
+    </circle>
+    <text x="0" y="-214" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="2" fill="#64748b">CONSTELLATION “THE UPTREND”</text>
+  </g>
+
+  <!-- ── OBSERVATORY BEAM (behind ridge/text) ───────────── -->
+  <g transform="translate(218,404)">
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="13s" repeatCount="indefinite"/>
-      <circle cx="58" cy="0" r="4" fill="#38bdf8"/>
+      <animateTransform attributeName="transform" type="rotate" values="-36;14;-36" dur="18s" repeatCount="indefinite"/>
+      <path d="M -10,0 L -52,-356 L 52,-356 L 10,0 Z" fill="url(#beam)"/>
+      <!-- photons riding the beam down into the dome -->
+      <circle cx="0" r="2.2" fill="#e0f2fe" filter="url(#glow)">
+        <animate attributeName="cy" values="-330;-16" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.85;1" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-14" r="1.7" fill="#a5f3fc" filter="url(#glow)">
+        <animate attributeName="cy" values="-330;-16" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.85;1" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="15" r="1.7" fill="#bae6fd" filter="url(#glow)">
+        <animate attributeName="cy" values="-330;-16" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.85;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+      </circle>
     </g>
   </g>
 
-  <!-- title block -->
-  <g transform="translate(330,86)">
-    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="2" fill="url(#title)">AHMED AL-KHALDI</text>
-    <text x="2" y="30" font-family="'Consolas','Courier New',monospace" font-size="15" font-weight="700" letter-spacing="3" fill="#22d3ee">// COSMIC DATA OBSERVATORY</text>
-    <text x="2" y="56" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="0.5" fill="#94a3b8">Data Analyst
-      <tspan fill="#475569"> · </tspan>Power BI Developer<tspan fill="#475569"> · </tspan>Astrophotographer<tspan fill="#a78bfa">_</tspan></text>
-    <!-- animated signal waveform -->
-    <g transform="translate(2,76)" stroke="#4ade80" stroke-width="2.4" fill="none" stroke-linecap="round">
-      <polyline points="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10">
+  <!-- ── MOUNTAIN RIDGE + DOME ──────────────────────────── -->
+  <path d="M0,520 L0,470 L120,430 L260,462 L420,418 L560,470 L740,432 L920,478 L1120,440 L1300,482 L1460,450 L1600,472 L1600,520 Z" fill="#0a0e1a"/>
+  <path d="M0,520 L0,492 L200,462 L380,496 L600,458 L840,500 L1080,466 L1320,502 L1600,470 L1600,520 Z" fill="#070a12"/>
+  <!-- dome -->
+  <g transform="translate(218,452)">
+    <rect x="-46" y="-10" width="92" height="26" rx="4" fill="#0b1020" stroke="#1e293b" stroke-width="1"/>
+    <path d="M -40,-8 A 40,40 0 0 1 40,-8 Z" fill="#111a30" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.2"/>
+    <!-- slit glow -->
+    <rect x="-6" y="-46" width="12" height="40" rx="5" fill="#22d3ee" opacity="0.7" filter="url(#glowBig)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="30" cy="4" r="2" fill="#4ade80"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ── TITLE BLOCK ────────────────────────────────────── -->
+  <g transform="translate(120,238)">
+    <animateTransform attributeName="transform" type="translate" from="120 256" to="120 238" dur="0.9s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="0.9s" fill="freeze"/>
+    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="3" fill="url(#title)" filter="url(#glow)">AHMED AL-KHALDI</text>
+    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="3" fill="url(#sheen)" opacity="0.7">AHMED AL-KHALDI</text>
+    <g clip-path="url(#typeClip)" transform="translate(4,44)">
+      <text x="0" y="0" font-family="'Consolas','Courier New',monospace" font-size="20" font-weight="700" letter-spacing="4" fill="#22d3ee">// COSMIC DATA OBSERVATORY</text>
+    </g>
+    <rect x="8" y="26" width="11" height="22" fill="#22d3ee">
+      <animate attributeName="x" from="8" to="478" dur="2.2s" begin="1.1s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="4" y="82" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" letter-spacing="0.6" fill="#94a3b8">Data Analyst<tspan fill="#475569">  ·  </tspan>Power BI Developer<tspan fill="#475569">  ·  </tspan>Astrophotographer</text>
+    <!-- live signal waveform -->
+    <g transform="translate(4,116)" stroke="url(#wave)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,10 40,10 58,10 74,-8 90,28 106,0 122,10 560,10">
         <animate attributeName="points"
-          values="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10;
-                  0,10 120,10 135,10 150,-6 165,24 180,2 195,10 420,10;
-                  0,10 250,10 265,10 280,-6 295,24 310,2 325,10 420,10;
-                  0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10"
-          dur="4s" repeatCount="indefinite"/>
+          values="0,10 40,10 58,10 74,-8 90,28 106,0 122,10 560,10;
+                  0,10 170,10 188,10 204,-8 220,28 236,0 252,10 560,10;
+                  0,10 330,10 348,10 364,-8 380,28 396,0 412,10 560,10;
+                  0,10 40,10 58,10 74,-8 90,28 106,0 122,10 560,10"
+          dur="4.5s" repeatCount="indefinite"/>
       </polyline>
+      <circle r="4" fill="#4ade80" stroke="none" filter="url(#glow)" cx="560" cy="10">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
     </g>
   </g>
+
+  <!-- ── EXIF / LOCATION FOOTER ─────────────────────────── -->
+  <text x="1568" y="502" text-anchor="end" font-family="'Consolas','Courier New',monospace" font-size="13" letter-spacing="1" fill="#8b98ab"><tspan fill="#ef4444">●<animate attributeName="opacity" values="1;0.15;1" dur="1.8s" repeatCount="indefinite"/></tspan> REC · ISO 3200 · f/2.8 · 25s  |  23.588°N 58.383°E · MUSCAT</text>
+
+  <!-- vignette -->
+  <rect width="1600" height="520" fill="url(#vig)"/>
 </svg>
