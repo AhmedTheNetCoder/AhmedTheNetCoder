@@ -5,7 +5,7 @@
 
 <!-- ░░░░░░░░░░ HERO / BANNER ░░░░░░░░░░ -->
 <p align="center">
-  <img src="./assets/header.svg" alt="Ahmed Al-Khaldi — Cosmic Data Observatory" width="100%"/>
+  <img src="./assets/observatory.svg" alt="Ahmed Al-Khaldi — Cosmic Data Observatory" width="100%"/>
 </p>
 
 <!-- ░░░░░░░░░░ LIVE TRANSMISSION (typing) ░░░░░░░░░░ -->
@@ -85,6 +85,14 @@ a different kind of light.
 > The array of instruments I use to capture, clean, and focus data.
 
 <div align="center">
+
+**◍ Full toolbelt at a glance**
+
+<a href="#-instrumentation--optics">
+  <img src="https://skillicons.dev/icons?i=py,postgres,mysql,sqlite,js,html,css,dotnet,bootstrap,git,github,vscode,figma,ps&theme=dark&perline=14" alt="tech stack icons"/>
+</a>
+
+<br/><br/>
 
 **◍ Primary Mirror — Business Intelligence**
 

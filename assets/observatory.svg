@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" fill="none" role="img" aria-label="Cosmic Data Observatory — animated banner" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="sky" cx="26%" cy="28%" r="95%">
+      <stop offset="0%" stop-color="#182247"/>
+      <stop offset="45%" stop-color="#0e1430"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </radialGradient>
+    <radialGradient id="neb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#6d28d9" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#a78bfa"/>
+      <stop offset="70%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1200" height="260" fill="url(#sky)"/>
+
+  <!-- drifting nebulae -->
+  <ellipse cx="230" cy="120" rx="260" ry="150" fill="url(#neb)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 30 -12; 0 0" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="980" cy="180" rx="230" ry="130" fill="url(#neb2)">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -26 10; 0 0" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.95;0.6" dur="11s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- twinkling starfield -->
+  <g fill="#ffffff">
+    <circle cx="80"  cy="40"  r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="90"  r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="60"  r="1.4"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.7s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="30"  r="1.0"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="0.7s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="110" r="1.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="50"  r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.3s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="90"  r="1.5"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="45"  r="1.1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="80" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.0s" begin="1.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1100" cy="50" r="1.2"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="200" r="1.3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" begin="1.0s" repeatCount="indefinite"/></circle>
+    <circle cx="360" cy="220" r="1.1"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="210" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.0s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="215" r="1.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1060" cy="205" r="1.4"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.5s" begin="1.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- shooting star (periodic) -->
+  <g>
+    <line x1="0" y1="0" x2="34" y2="10" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.9;0" keyTimes="0;0.7;0.82;1" dur="7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="900 -20; 900 -20; 1180 120; 1180 120" keyTimes="0;0.7;0.95;1" dur="7s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- observatory: radar sweep + orbit around a data core -->
+  <g transform="translate(180,130)">
+    <!-- faint range rings -->
+    <circle r="86" fill="none" stroke="#22d3ee" stroke-opacity="0.14" stroke-width="1"/>
+    <circle r="58" fill="none" stroke="#22d3ee" stroke-opacity="0.18" stroke-width="1"/>
+    <circle r="30" fill="none" stroke="#22d3ee" stroke-opacity="0.22" stroke-width="1"/>
+    <!-- rotating radar sweep -->
+    <g>
+      <path d="M0 0 L86 0 A86 86 0 0 1 60 62 Z" fill="url(#sweep)" opacity="0.5"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <!-- glowing data core -->
+    <circle r="26" fill="url(#core)">
+      <animate attributeName="r" values="22;28;22" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="6" fill="#ffffff"/>
+    <!-- orbiting planet -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      <circle cx="86" cy="0" r="6" fill="#f472b6"/>
+      <circle cx="86" cy="0" r="12" fill="#f472b6" opacity="0.25"/>
+    </g>
+    <!-- second orbiter, opposite direction -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="13s" repeatCount="indefinite"/>
+      <circle cx="58" cy="0" r="4" fill="#38bdf8"/>
+    </g>
+  </g>
+
+  <!-- title block -->
+  <g transform="translate(330,110)">
+    <text x="0" y="0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" letter-spacing="2" fill="url(#title)">COSMIC DATA OBSERVATORY</text>
+    <text x="2" y="34" font-family="'Consolas','Courier New',monospace" font-size="17" fill="#94a3b8">
+      <tspan fill="#22d3ee">&gt;</tspan> pointing analytical instruments at raw data<tspan fill="#a78bfa">_</tspan>
+      <animate attributeName="opacity" values="1;1" dur="1s"/>
+    </text>
+    <!-- animated signal waveform -->
+    <g transform="translate(2,58)" stroke="#4ade80" stroke-width="2.4" fill="none" stroke-linecap="round">
+      <polyline points="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10">
+        <animate attributeName="points"
+          values="0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10;
+                  0,10 120,10 135,10 150,-6 165,24 180,2 195,10 420,10;
+                  0,10 250,10 265,10 280,-6 295,24 310,2 325,10 420,10;
+                  0,10 30,10 45,10 60,-6 75,24 90,2 105,10 420,10"
+          dur="4s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+  </g>
+</svg>
