@@ -4,23 +4,27 @@
     "X",
     "X",
     "O",
+    "X",
     " ",
-    " ",
-    " ",
+    "O",
     " ",
     " "
   ],
   "stats": {
     "human": 0,
-    "ai": 0,
+    "ai": 1,
     "draw": 0
   },
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 4,
-  "finished": false,
-  "highlight": [],
-  "msg": "YOUR MOVE, EARTHLING \u2014 HUMANITY PLAYS X",
-  "tone": "cyan"
+  "moves": 5,
+  "finished": true,
+  "highlight": [
+    0,
+    3,
+    6
+  ],
+  "msg": "THE OBSERVATORY AI WINS \u2014 RESISTANCE IS FUTILE",
+  "tone": "pink"
 }

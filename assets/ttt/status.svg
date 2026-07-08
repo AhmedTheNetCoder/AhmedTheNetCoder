@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="820" height="120" viewBox="0 0 820 120" fill="none" role="img" aria-label="game status">
   <rect x="1" y="1" width="818" height="118" rx="14" fill="#0e141d" stroke="#263143" stroke-width="1.5"/>
   <text x="30" y="34" font-family="'Consolas','Courier New',monospace" font-size="11" letter-spacing="4" fill="#64748b">HUMANITY  vs  THE OBSERVATORY AI</text>
-  <text x="30" y="66" font-family="'Consolas','Courier New',monospace" font-size="19" font-weight="700" fill="#22d3ee">YOUR MOVE, EARTHLING — HUMANITY PLAYS X</text>
+  <text x="30" y="66" font-family="'Consolas','Courier New',monospace" font-size="19" font-weight="700" fill="#f472b6">THE OBSERVATORY AI WINS — RESISTANCE IS FUTILE</text>
   <g font-family="'Consolas','Courier New',monospace" font-size="13">
     <text x="30" y="98" fill="#22d3ee">✕ HUMANITY 0</text>
-    <text x="185" y="98" fill="#a78bfa">◍ AI 0</text>
+    <text x="185" y="98" fill="#a78bfa">◍ AI 1</text>
     <text x="285" y="98" fill="#94a3b8">≡ DRAWS 0</text>
     <text x="790" y="98" text-anchor="end" fill="#64748b">LATEST OBSERVERS: @AhmedTheNetCoder</text>
   </g>
