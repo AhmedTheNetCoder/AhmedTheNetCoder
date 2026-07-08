@@ -1,26 +1,26 @@
 {
   "board": [
-    "O",
-    "X",
-    "O",
     " ",
-    "X",
-    "O",
-    "X",
-    "O",
-    "X"
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
   ],
   "stats": {
     "human": 0,
     "ai": 1,
-    "draw": 0
+    "draw": 1
   },
   "recent": [
     "AhmedTheNetCoder"
   ],
-  "moves": 10,
+  "moves": 11,
   "finished": false,
   "highlight": [],
-  "msg": "AI TOOK SECTOR 1 \u2014 YOUR MOVE, EARTHLING",
-  "tone": "cyan"
+  "msg": "LAST ROUND: STALEMATE \u2014 NEW ROUND, YOUR MOVE",
+  "tone": "violet"
 }
