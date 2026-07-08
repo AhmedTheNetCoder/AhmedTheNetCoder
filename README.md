@@ -254,6 +254,11 @@ one glance to the answer.
 
 <div align="center">
 
+<!-- Animated 3D contribution calendar — regenerated daily by .github/workflows/3d-contrib.yml -->
+<img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/profile-3d-contrib/profile-night-view.svg" alt="3D contribution calendar" width="100%"/>
+
+<br/><br/>
+
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=AhmedTheNetCoder&show_icons=true&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=22d3ee&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="stats"/>
 <img height="165" src="https://streak-stats.demolab.com/?user=AhmedTheNetCoder&type=svg&hide_border=true&background=0d1117&stroke=8b5cf6&ring=22d3ee&fire=f472b6&currentStreakLabel=22d3ee&sideLabels=c9d1d9&dates=64748b&currentStreakNum=c9d1d9&sideNums=c9d1d9" alt="streak"/>
 
