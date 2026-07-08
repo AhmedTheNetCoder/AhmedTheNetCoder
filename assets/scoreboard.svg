@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" fill="none" role="img" aria-label="global scoreboard">
   <rect x="1" y="1" width="1198" height="168" rx="16" fill="#0e141d" stroke="#263143" stroke-width="1.5"/>
-  <text x="34" y="38" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="4" fill="#64748b">GLOBAL OBSERVATORY SCOREBOARD — 0 TRANSMISSIONS RECEIVED FROM THE ARCADE</text>
+  <text x="34" y="38" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="4" fill="#64748b">GLOBAL OBSERVATORY SCOREBOARD — 1 TRANSMISSION RECEIVED FROM THE ARCADE</text>
   <g font-family="'Consolas','Courier New',monospace">
-    <text x="34"  y="96" font-size="40" font-weight="700" fill="#a78bfa">0</text>
+    <text x="34"  y="96" font-size="40" font-weight="700" fill="#a78bfa">1</text>
     <text x="34"  y="118" font-size="12" letter-spacing="2" fill="#64748b">AI VICTORIES</text>
     <text x="200" y="96" font-size="40" font-weight="700" fill="#22d3ee">0</text>
     <text x="200" y="118" font-size="12" letter-spacing="2" fill="#64748b">STALEMATES</text>
@@ -12,7 +12,7 @@
   </g>
   <line x1="560" y1="55" x2="560" y2="120" stroke="#263143" stroke-width="1.5"/>
   <text x="596" y="72" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="3" fill="#64748b">RECENT CHALLENGERS</text>
-  <text x="596" y="100" font-family="'Consolas','Courier New',monospace" font-size="15"><tspan fill="#475569">awaiting first transmission…</tspan></text>
+  <text x="596" y="100" font-family="'Consolas','Courier New',monospace" font-size="15"><tspan fill="#94a3b8">@AhmedTheNetCo…</tspan><tspan fill="#f472b6"> L</tspan><tspan fill="#334155">   </tspan></text>
   <text x="596" y="128" font-family="'Consolas','Courier New',monospace" font-size="12" fill="#475569">play, then hit TRANSMIT RESULT to get your name here</text>
   <circle cx="1146" cy="36" r="5" fill="#4ade80"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
   <text x="1136" y="41" text-anchor="end" font-family="'Consolas','Courier New',monospace" font-size="12" letter-spacing="2" fill="#64748b">LIVE</text>
