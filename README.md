@@ -28,6 +28,7 @@
   <a href="#-first-contact"><img src="https://img.shields.io/badge/🛰️_First_Contact-0d1117?style=for-the-badge" alt="intro"/></a>
   <a href="#-instrumentation--optics"><img src="https://img.shields.io/badge/🔭_Instrumentation-0d1117?style=for-the-badge" alt="skills"/></a>
   <a href="#-signal-processing-lab"><img src="https://img.shields.io/badge/📡_Signal_Lab-0d1117?style=for-the-badge" alt="data"/></a>
+  <a href="#-featured-observations"><img src="https://img.shields.io/badge/🪐_Featured_Work-0d1117?style=for-the-badge" alt="projects"/></a>
   <a href="#-long-exposure-gallery"><img src="https://img.shields.io/badge/📷_Long_Exposure-0d1117?style=for-the-badge" alt="photography"/></a>
   <a href="#-observatory-telemetry"><img src="https://img.shields.io/badge/📊_Telemetry-0d1117?style=for-the-badge" alt="stats"/></a>
   <a href="#-open-a-channel"><img src="https://img.shields.io/badge/📶_Open_a_Channel-0d1117?style=for-the-badge" alt="contact"/></a>
@@ -173,6 +174,28 @@ one glance to the answer.
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 
+<!-- ░░░░░░░░░░ FEATURED OBSERVATIONS (projects) ░░░░░░░░░░ -->
+## 🪐 Featured Observations
+
+> Deep-field objects catalogued by this observatory — real work, pointed at real problems.
+
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/GCC-Economic-Dashboard"><img src="./assets/cards/gcc-dashboard.svg" width="100%" alt="GCC Economic Dashboard — Power BI"/></a></td>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/oman-retail-price-intelligence"><img src="./assets/cards/price-intel.svg" width="100%" alt="Oman retail price intelligence — Python"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/sql-business-queries"><img src="./assets/cards/sql-queries.svg" width="100%" alt="SQL business queries"/></a></td>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/web-scraping-pipeline"><img src="./assets/cards/etl-pipeline.svg" width="100%" alt="Web scraping ETL pipeline — Python"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/oman-economic-analysis"><img src="./assets/cards/oman-economy.svg" width="100%" alt="Oman economic analysis — Python"/></a></td>
+<td width="50%"><a href="https://github.com/AhmedTheNetCoder/excel-automation-toolkit"><img src="./assets/cards/excel-toolkit.svg" width="100%" alt="Excel automation toolkit — VBA"/></a></td>
+</tr>
+</table>
+
+<img src="./assets/divider.svg" width="100%" alt="divider"/>
+
 <!-- ░░░░░░░░░░ LONG-EXPOSURE GALLERY (photography) ░░░░░░░░░░ -->
 ## 📷 Long-Exposure Gallery
 
@@ -254,6 +277,14 @@ one glance to the answer.
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 
+<!-- ░░░░░░░░░░ TRANSMISSION OF THE DAY (rotating quote) ░░░░░░░░░░ -->
+<!-- regenerated daily by .github/workflows/transmission.yml -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AhmedTheNetCoder/AhmedTheNetCoder/main/assets/transmission.svg" width="100%" alt="transmission of the day — rotating quote"/>
+</p>
+
+<img src="./assets/divider.svg" width="100%" alt="divider"/>
+
 <!-- ░░░░░░░░░░ OPEN A CHANNEL (contact) ░░░░░░░░░░ -->
 ## 📶 Open a Channel
 
@@ -281,11 +312,6 @@ one glance to the answer.
 </div>
 
 <br/>
-
-<p align="center">
-  <i>“We are just an advanced breed of monkeys on a minor planet of a very average star.
-  But we can understand the Universe. That makes us something very special.” — Stephen Hawking</i>
-</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer&text=end%20of%20transmission&fontColor=8b5cf6&fontSize=20&fontAlignY=75" width="100%" alt="footer"/>
