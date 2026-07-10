@@ -14,7 +14,7 @@
       <animate attributeName="y" values="16;2;16" dur="0.9s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <text x="78" y="34" font-family="'Consolas','Courier New',monospace" font-size="11" letter-spacing="3" fill="#64748b">TRANSMISSION OF THE DAY // DAY 190</text>
-  <text x="78" y="62" font-family="Georgia,'Times New Roman',serif" font-size="19" font-style="italic" fill="#c9d1d9">&#8220;Astronomy compels the soul to look upward.&#8221;</text>
-  <text x="1166" y="62" text-anchor="end" font-family="'Consolas','Courier New',monospace" font-size="13" fill="#a78bfa">&#8212; Plato</text>
+  <text x="78" y="34" font-family="'Consolas','Courier New',monospace" font-size="11" letter-spacing="3" fill="#64748b">TRANSMISSION OF THE DAY // DAY 191</text>
+  <text x="78" y="62" font-family="Georgia,'Times New Roman',serif" font-size="19" font-style="italic" fill="#c9d1d9">&#8220;Equipped with his five senses, man explores the universe and calls the adventure Science.&#8221;</text>
+  <text x="1166" y="62" text-anchor="end" font-family="'Consolas','Courier New',monospace" font-size="13" fill="#a78bfa">&#8212; Edwin Hubble</text>
 </svg>
